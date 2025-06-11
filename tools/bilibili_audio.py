@@ -21,7 +21,7 @@ async def extract_audio(url: str = Query(..., description="B站视频链接")):
             'preferredcodec': 'mp3',
             'preferredquality': '192',
         }],
-        'ffmpeg_location': 'ffmpeg',
+        'ffmpeg_location': '/usr/bin/ffmpeg',  # 显式指定路径
         'quiet': True
     }
 
